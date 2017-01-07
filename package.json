@@ -1,5 +1,5 @@
 {
-  "name": "feathers-bookshelf",
+  "name": "feathers-bookshelf-service",
   "version": "1.0.0",
   "description": "A Bookshelf service for Feathers",
   "keywords": [
