@@ -42,7 +42,8 @@ app.use((err, req, res, next) => {
     res.json(err);
 });
 
-module.exports = () => {
+// Bootstrap fn
+const bootstrap = () => {
     // Clean up database
     return bookshelf.knex.schema
         .dropTableIfExists('todos')
@@ -62,3 +63,12 @@ module.exports = () => {
             });
         });
 };
+
+module.exports = bootstrap;
+
+if (require.main === module) {
+    bootstrap()
+        .catch((err) => {
+            console.error(err);
+        });
+}
