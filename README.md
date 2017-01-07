@@ -5,7 +5,7 @@ A Bookshelf service for Feathers
 ## Installation
 
 ```bash
-npm install feathers-bookshelf --save
+npm install feathers-bookshelf-service --save
 ```
 
 ## Documentation
