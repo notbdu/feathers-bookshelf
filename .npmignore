@@ -1,0 +1,9 @@
+test/
+example/
+coverage/
+node_modules/
+.idea/
+.eslintignore
+.eslintrc.js
+db.sqlite
+mocha.opts
