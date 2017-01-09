@@ -12,7 +12,6 @@ const bookshelf = Bookshelf(knex({
         filename: './db.sqlite',
     },
 }));
-bookshelf.plugin('pagination');
 
 // Define model
 const Todo = bookshelf.Model.extend({

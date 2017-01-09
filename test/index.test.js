@@ -13,7 +13,6 @@ const bookshelf = Bookshelf(knex({
         filename: './db.sqlite',
     },
 }));
-bookshelf.plugin('pagination');
 
 const Person = bookshelf.Model.extend({
     tableName: 'people',
